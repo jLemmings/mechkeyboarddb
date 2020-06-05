@@ -24,6 +24,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+
 new Vue({
     router,
     store,

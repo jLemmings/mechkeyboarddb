@@ -4,6 +4,7 @@ import Login from "../components/Login"
 import Register from "../components/Register"
 import Dashboard from "../components/Dashboard"
 import Profile from "../components/Profile"
+import Build from "../components/Build"
 import firebase from 'firebase'
 
 Vue.use(Router)
@@ -35,6 +36,14 @@ const router = new Router({
             path: "/profile",
             name: "Profile",
             component: Profile,
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: "/build",
+            name: "Build",
+            component: Build,
             meta: {
                 requiresAuth: true
             }
