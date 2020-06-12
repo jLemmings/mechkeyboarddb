@@ -12,6 +12,7 @@ export default new Vuetify({
         themes: {
             dark: {
                 primary: "#F796AE",
+                warn: "#403d3d",
 
             }
         }

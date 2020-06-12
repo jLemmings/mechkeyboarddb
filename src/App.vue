@@ -10,7 +10,11 @@
             <v-list dense>
                 <v-list-item link>
                     <v-list-item-action>
-                        <v-icon>mdi-account</v-icon>
+                        <router-link to='profile'>
+
+                            <v-icon>mdi-account</v-icon>
+                        </router-link>
+
                     </v-list-item-action>
 
                     <v-list-item-content>
@@ -34,10 +38,14 @@
 
                 <v-list-item link>
                     <v-list-item-action>
-                        <v-icon>mdi-settings</v-icon>
+                        <router-link to='build'>
+                            <v-icon>mdi-keyboard</v-icon>
+                        </router-link>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <v-list-item-title>Settings</v-list-item-title>
+                        <router-link to='build'>
+                            <v-list-item-title>Build</v-list-item-title>
+                        </router-link>
                     </v-list-item-content>
                 </v-list-item>
 
