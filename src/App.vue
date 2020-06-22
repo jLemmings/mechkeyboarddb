@@ -4,8 +4,6 @@
                 v-model="drawer"
                 app
                 clipped
-                mini-variant
-                expand-on-hover
         >
             <v-list dense>
                 <v-list-item link>
@@ -62,10 +60,12 @@
 
         </v-navigation-drawer>
 
+
         <v-app-bar
                 app
                 clipped-left
         >
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title>Mech Build DB</v-toolbar-title>
             <v-spacer></v-spacer>
 
@@ -76,14 +76,10 @@
             <router-link to='register'>
                 <v-btn depressed medium outlined>Register</v-btn>
             </router-link>
-
         </v-app-bar>
 
         <v-content>
-
             <router-view></router-view>
-
-
         </v-content>
 
         <v-footer app>
